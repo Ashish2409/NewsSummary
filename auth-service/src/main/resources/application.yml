@@ -3,7 +3,7 @@ spring:
     name: auth-service
   data:
     mongodb:
-      uri: mongodb+srv://Ashish2409:Bashish%402409@cluster0.iclo00q.mongodb.net/newsdb?retryWrites=true&w=majority
+      uri: ${MONGO_URI}
 
 jwt:
   secret: ${JWT_KEY}

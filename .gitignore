@@ -1,0 +1,64 @@
+# ===========================================================
+#   🌱 .gitignore for multi-module Spring Boot projects
+# ===========================================================
+
+# --- 🔐 Environment files ---
+.env
+*.env
+**/.env
+**/*.env
+
+# --- 🧱 Build outputs ---
+build/
+**/build/
+target/
+**/target/
+out/
+
+# --- 🧠 IDEs ---
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# --- 🪵 Logs ---
+*.log
+*.log.*
+
+# --- 🧹 System files ---
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# --- ⚙️ Gradle/Maven caches ---
+.gradle/
+**/.gradle/
+.mvn/
+**/.mvn/
+
+# --- ☕ Compiled artifacts ---
+*.class
+*.jar
+*.war
+*.ear
+
+# --- 🧪 Test reports ---
+test-output/
+surefire-reports/
+hs_err_pid*
+
+# --- Custom per-service ignores ---
+auth-service/build/
+news-service/build/
+gateway/build/
+common/build/
+auth-service/.env
+news-service/.env
+gateway/.env
+common/.env

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: auth-service
+  data:
+    mongodb:
+      uri: mongodb+srv://Ashish2409:Bashish%402409@cluster0.iclo00q.mongodb.net/newsdb?retryWrites=true&w=majority
+
+jwt:
+  secret: ${JWT_KEY}
+
+server:
+  error:
+    include-message: ALWAYS
+    include-binding-errors: ALWAYS
+  port: 8081
